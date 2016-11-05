@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="180dp"
+              android:background="@drawable/botter_line">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <com.example.administrator.store3.customview.CircleImageView
+            android:id="@+id/image1_lv2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/s_sp_01"/>
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Gmall美食公馆"
+            android:gravity="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离11km" />
+        <ImageView
+            android:id="@+id/locator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:src="@drawable/loc_red"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:paddingBottom="5dp">
+        <ImageView
+            android:id="@+id/image2_lv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/s_sp_01"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:descendantFocusability="afterDescendants">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick" />
+        <ImageView
+            android:id="@+id/image_dian"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/dianpu"
+            android:paddingLeft="10dp" />
+        <TextView
+            android:id="@+id/mingzi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="周大福旗舰店"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:clickable="true"
+            android:onClick="onClick" />
+        <ImageView
+            android:id="@+id/youjiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/youjiantou"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="领券"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="|"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="编辑"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#EBEBEC"/>
+
+    <ListView
+        android:id="@+id/lv_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="horizontal">
+       <LinearLayout
+           android:layout_width="28dp"
+           android:layout_marginLeft="8dp"
+           android:layout_height="match_parent">
+           <ImageView
+               android:id="@+id/image0"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/fanhui"
+               android:onClick="onClick" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="5"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+           <EditText
+               android:id="@+id/auto_edit"
+               android:layout_gravity="center_vertical"
+               android:paddingLeft="5dp"
+               android:layout_margin="3dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/suhhhh1"
+               android:textSize="18sp"
+               android:imeOptions="actionSearch"
+               android:inputType="text"
+               android:hint="京东南玉商城"/>
+           <requestFocus />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/search_button"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:gravity="center"
+               android:textSize="23sp"
+               android:text="搜索"
+               android:clickable="true" />
+       </LinearLayout>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A5A5A5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+        <ListView
+            android:id="@+id/auto_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:fadingEdge="none"
+            android:layout_centerHorizontal="true" >
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

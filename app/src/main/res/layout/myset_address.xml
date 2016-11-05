@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF5F5"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/image0"
+            android:layout_width="28dp"
+          android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/fanhui" />
+        <LinearLayout
+            android:id="@+id/line_seach"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/name"
+            android:layout_height="match_parent"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_linear"
+            android:layout_width="match_parent"
+            android:text="我的地址"
+            android:gravity="left|center"
+            android:textSize="25sp"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="28dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/mr_message"
+            android:layout_height="match_parent"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DFDFDF" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+	<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9" >
+    <ListView
+        android:id="@+id/myset_address_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/button_line"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </ListView>
+    <RelativeLayout
+	        android:id="@+id/dizhi"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="gone" >
+        <ImageView
+            android:id="@+id/zhengzaijiazai_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/myaddress" />
+    </RelativeLayout>
+    </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+       android:id="@+id/myset_address_linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:text="+新建地址"
+            android:background="#009A44"
+            android:textSize="25sp"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:pv="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/header">
+                <ImageView
+                    android:id="@+id/image_left"
+                    android:layout_width="28dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left"/>
+
+            </LinearLayout>
+            <com.example.administrator.store3.customview.CustomCircle
+                android:id="@+id/touxiang"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/s_sp_01"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                pv:border_thickness="1dp"
+                pv:border_outside_color="#80808080" />
+            <TextView
+                android:id="@+id/mingzi"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵日天"
+                android:textSize="25sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <TextView
+                    android:id="@+id/jianjie"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="简介 :"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/jianjieneirong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="腾讯公司主要创办人之一,2014年9月起转任公司总裁兼腾讯学院荣誉校长;参与了腾讯公司的创建,并出任腾讯公司首席技术顾问."
+                    android:lineSpacingExtra="2dp"
+                    android:lineSpacingMultiplier="1.3" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名言"
+                    android:textSize="21sp" />
+                <TextView
+                    android:id="@+id/mingyan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my"
+                    android:text="世界上一成不变的东西,只有 ' 任何事物都是在不断变化的 ' 这条真理."
+                    android:lineSpacingExtra="2dp"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="2dp" />
+                <ImageView
+                    android:id="@+id/yinzhang"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/mingyan"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/s_sp_02"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/line2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/line"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@android:drawable/ic_media_rew" />
+                    <ViewFlipper android:id="@+id/ViewFlipper2"
+                                 android:layout_width="0dp"
+                                 android:layout_height="200dp"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 android:layout_weight="1">
+                    </ViewFlipper>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@android:drawable/ic_media_ff" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

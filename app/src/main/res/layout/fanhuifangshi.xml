@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EFF5F5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/image0"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fanhui"
+            android:layout_marginLeft="8dp"
+                android:onClick="onClick" />
+        <LinearLayout
+            android:id="@+id/line_seach"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/name"
+            android:layout_height="match_parent"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="商品返回方式选择"
+                android:textSize="20sp"
+                android:gravity="center" />
+        </LinearLayout>
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mr_message" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="商品返回方式"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:paddingLeft="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kuaidifanhui"
+            android:text="快递至第三方买家"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品返回地将在服务单审核通过后以短信形式告知，或查看返修/退货记录中查询，京东不收取任何费用。"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#B4B4B4" />
+        <com.example.administrator.store3.customview.CustomLine
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="联系人:"
+                android:gravity="center_vertical" />
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="西瓜"
+                android:textColorHint="#B4B4B4"
+                android:background="@drawable/biankuang3"
+                android:padding="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="联系电话:"
+                android:gravity="center_vertical" />
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="151****5463"
+                android:textColorHint="#B4B4B4"
+                android:background="@drawable/biankuang3"
+                android:padding="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/xiayibu"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:background="@drawable/woyaochajian"
+            android:onClick="onClick"
+            android:clickable="true" />
+    </LinearLayout>
+</LinearLayout>

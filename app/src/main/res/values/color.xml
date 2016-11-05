@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="red">#D23644</drawable>
+
+  <!--  <drawable name="green">#CDD7E2</drawable>-->
+    <drawable name="gray">#7CFC00</drawable>
+    <color name="white">#FFFFFF</color>
+    <!-- 灰色 -->
+    <color name="lightgrey">#999999</color>
+    <!-- 亮灰色 -->
+    <color name="black">#000000</color>
+</resources>

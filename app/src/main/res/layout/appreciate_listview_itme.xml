@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/jianshang_shape"
+              android:layout_margin="10dp"
+              android:paddingBottom="2dp"
+              android:padding="10dp">
+    <ImageView
+        android:id="@+id/image_app"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:scaleType="fitXY" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+            <TextView
+                android:id="@+id/mingzi"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="名玉鉴赏"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/shuoming"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="名玉鉴赏,名玉鉴赏"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <com.example.administrator.store3.customview.CircleImageView
+                android:id="@+id/yinzhang"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/s_sp_02"
+                app:border_width="1dp"
+                app:border_color="#B4B4B4"
+                android:layout_marginRight="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

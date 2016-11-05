@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="130dp">
+
+    <RelativeLayout
+        android:id="@+id/rll"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/gouwuqian_bg"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/guoqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/image" />
+
+    <LinearLayout
+        android:id="@+id/ll_linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp">
+                <ImageView
+                    android:id="@+id/image_conpon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/s_sp_02" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/dianpu_conpon"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="周大福金黄的旗舰店"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/ruler_copon"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="订单满500即可使用"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="使用期限 :" />
+            <TextView
+                android:id="@+id/time_compon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2016-05-08 至 2016-11-09" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/line"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:text="¥"
+                android:textColor="@color/white"
+                android:gravity="right|center"
+                android:layout_marginBottom="15dp" />
+            <TextView
+                android:id="@+id/money_compon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="50"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="#FF0000" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="优惠券"
+                android:textColor="@color/white"
+                android:gravity="center|left" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

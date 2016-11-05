@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:descendantFocusability="afterDescendants"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/checkBoxs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="onClick" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/brands_04"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/neirong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="今天研究了TextView一天了，发现网上有一篇讲TextView属性的，非常全，收藏一下先。发现TextView有一个比较大的问题，就是文字排版的问题，遇到数字，字母，符号等就会有问题，目前还没有什么解决方法。"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textSize="19sp"
+                    android:lineSpacingExtra="3dp"
+                    android:lineSpacingMultiplier="1.1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/guige"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="规格:大款--虎" />
+                    <TextView
+                        android:id="@+id/item_product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="￥123"
+                        android:textColor="#F45B5B"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/item_btn_sub"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/biankuangsubs"
+                        android:text="-"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:onClick="onClick" />
+                    <TextView
+                        android:id="@+id/item_product_num"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="111"
+                        android:background="@drawable/biankuang" />
+
+                        <TextView
+                            android:id="@+id/item_btn_add"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/biankuangadd"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="onClick" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

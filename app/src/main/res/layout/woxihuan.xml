@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/image0"
+        android:layout_width="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/fanhui" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <RadioGroup
+            android:id="@+id/radioGroup_wxh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/radiobutoon_wxh1"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:background="@drawable/radio_shape"
+                android:text="宝贝"
+                android:gravity="center"
+                android:checked="true"
+                android:clickable="true" />
+            <RadioButton
+                android:id="@+id/radiobutoon_wxh11"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:background="@drawable/radio_shape1"
+                android:text="宝贝"
+                android:gravity="center"
+                android:clickable="true"
+                android:visibility="gone" />
+            <RadioButton
+                android:id="@+id/radiobutoon_wxh2"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:background="@drawable/radio_shape_r"
+                android:text="店铺"
+                android:gravity="center"
+                android:clickable="true" />
+            <RadioButton
+                android:id="@+id/radiobutoon_wxh22"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:background="@drawable/radio_shape_r1"
+                android:text="店铺"
+                android:gravity="center"
+                android:clickable="true"
+                android:visibility="gone" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>
+    <FrameLayout
+        android:id="@+id/woxihuan"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+</LinearLayout>
